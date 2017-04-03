@@ -4,5 +4,6 @@ export class Album {
     public albumArtist: string,
     public albumDescription: string,
     public id: number
-  );
+  ){ }
+
 }
