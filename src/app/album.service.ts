@@ -10,4 +10,15 @@ export class AlbumService {
   getAlbums() {
     return ALBUMS;
   }
+
+  getAlbumById(albumId: number) {
+    let foundAlbum: Album = null;
+
+    ALBUMS.forEach((album)=> {
+      if(album.id === albumId){
+        foundAlbum = album;
+      }
+    });
+    return foundAlbum;
+  }
 }
